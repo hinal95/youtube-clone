@@ -14,7 +14,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    await axios.post('/api/register', form);
+    await axios.post('https://youtube-clone-backend-wjux.onrender.com/api/register', form);
     localStorage.setItem('username', form.username);
     navigate('/login');
   } catch (error) {
